@@ -1,7 +1,7 @@
 # Jupyter Lab Skeleton
 
 ## Intro
-This is a base skeleton for building a quick data science lab using docker.
+This is a base skeleton for building a quick JupyterLab server using docker.
 It relies on the Jupyter Stacks docker images.
 Because it's so simple, it should be pretty easy to modify to suit different systems.
 It should also work with most of the Jupyter Stacks images.
@@ -21,14 +21,20 @@ It is intended for use on a Linux host.
 ## Use
 1. `git clone https://github.com/urbansec/LabStarter.git` or download files
 1. Configure file system
-  2. `mkdir $HOME/working`
-  2. `mkdir $HOME/working/Jupyter_Projects`
-  2. `mkdir $HOME/working/Jupyter_Projects/project_name`
-  2. `mkdir $HOME/working/Jupyter_Projects/project_name/work`
+   1. `mkdir $HOME/working`
+   1. `mkdir $HOME/working/Jupyter_Projects`
+   1. `mkdir $HOME/working/Jupyter_Projects/project_name`
+   1. `mkdir $HOME/working/Jupyter_Projects/project_name/work`
 1. Edit .env file
-  2. Set "INS_HOME" to path of your home directory (`echo $HOME` in most shells)
-  2. Set "INS_PROJECT" to whatever project_name you chose
+   1. Set "INS_HOME" to path of your home directory (`echo $HOME` in most shells)
+   1. Set "INS_PROJECT" to whatever project_name you chose
 1. Copy "jupyter_server_config.json" to "$HOME/working/Jupyter_Projects/project_name/work/"
 1. Edit Dockerfile to further customize image if desired.
-1. Launch the container
-  2. sudo docker-compose up
+1. Launching and accessing the container
+   1. `sudo docker-compose up`
+   1. Use ip, port, token to access Jupyter and set a password
+   1. After the password is set, you can use `sudo docker-compose up -d`
+
+## Resources
+- Getting started with Docker https://docs.docker.com/get-started/
+- Jupyter Stacks https://jupyter-docker-stacks.readthedocs.io/en/latest/
