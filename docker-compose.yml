@@ -1,0 +1,12 @@
+services:
+  jupyterlab:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8888:8888
+    volumes:
+      - ${INS_ROOT_PATH}/${INS_PROJECT}/work:/home/jovyan/work
+      - ${INS_ROOT_PATH}/${INS_PROJECT}/jupyter_server_config.json:/home/jovyan/.jupyter/jupyter_server_config.json
+    environment:
+      GEN_CERT: yes
