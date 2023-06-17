@@ -1,4 +1,8 @@
 # Jupyter Lab Skeleton
+<figure style="text-align: left; font-style: italic; font-size: smaller; text-indent: 2em; border: none; margin: 0.5em; padding: 0.5em;">
+<img src="https://urbansec.github.io/assets/img/repo_images/lab_skeleton.jpg" alt="Skeleton doing science in lab" style="display: block; margin-left: auto; margin-right: auto; width: 50%"/>
+<figcaption>Lab Skeleton</figcaption>
+</figure>
 
 ## Intro
 This is a base skeleton for building a quick JupyterLab server using docker.
